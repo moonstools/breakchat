@@ -1,0 +1,94 @@
+local LagGui = Instance.new("ScreenGui", game.CoreGui)
+LagGui.Name = "Lag"
+LagGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local MainFrame = Instance.new("Frame", LagGui)
+MainFrame.BorderSizePixel = 0
+MainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+MainFrame.Size = UDim2.new(0, 322, 0, 174)
+MainFrame.Position = UDim2.new(0.360, 0, 0.385, 0)
+MainFrame.Name = "Main"
+MainFrame.BackgroundTransparency = 0.2
+MainFrame.BorderRadius = UDim.new(0, 10)
+
+local LagButton = Instance.new("TextButton", MainFrame)
+LagButton.TextWrapped = true
+LagButton.BorderSizePixel = 0
+LagButton.TextScaled = true
+LagButton.BackgroundColor3 = Color3.fromRGB(20, 170, 20)
+LagButton.TextSize = 14
+LagButton.Font = Enum.Font.SourceSansBold
+LagButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LagButton.Size = UDim2.new(0, 176, 0, 46)
+LagButton.Name = "LagButton"
+LagButton.Text = "Lag It!"
+LagButton.Position = UDim2.new(0.22, 0, 0.65, 0)
+LagButton.BackgroundTransparency = 0.1
+LagButton.BorderRadius = UDim.new(0, 10)
+
+local LagScript = Instance.new("LocalScript", LagButton)
+LagScript.Name = "LagIt"
+
+local TitleLabel = Instance.new("TextLabel", MainFrame)
+TitleLabel.TextWrapped = true
+TitleLabel.BorderSizePixel = 0
+TitleLabel.TextScaled = true
+TitleLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TitleLabel.Font = Enum.Font.SourceSansBold
+TitleLabel.TextSize = 14
+TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleLabel.Size = UDim2.new(0, 149, 0, 50)
+TitleLabel.Text = "Fe Chat Breaker By Moon"
+TitleLabel.Name = "Title"
+TitleLabel.Position = UDim2.new(0.05, 0, 0.08, 0)
+TitleLabel.BackgroundTransparency = 0.2
+TitleLabel.BorderRadius = UDim.new(0, 10)
+
+local MessageBox = Instance.new("TextBox", MainFrame)
+MessageBox.BorderSizePixel = 0
+MessageBox.TextSize = 14
+MessageBox.TextWrapped = true
+MessageBox.TextScaled = true
+MessageBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MessageBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+MessageBox.Font = Enum.Font.SourceSans
+MessageBox.PlaceholderText = "Message?"
+MessageBox.Size = UDim2.new(0, 114, 0, 36)
+MessageBox.Text = ""
+MessageBox.Position = UDim2.new(0.54, 0, 0.41, 0)
+MessageBox.Name = "Message"
+MessageBox.BackgroundTransparency = 0.1
+MessageBox.BorderRadius = UDim.new(0, 10)
+
+local HowMuchBox = Instance.new("TextBox", MainFrame)
+HowMuchBox.BorderSizePixel = 0
+HowMuchBox.TextSize = 14
+HowMuchBox.TextWrapped = true
+HowMuchBox.TextScaled = true
+HowMuchBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+HowMuchBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+HowMuchBox.Font = Enum.Font.SourceSans
+HowMuchBox.PlaceholderText = "How Much?"
+HowMuchBox.Size = UDim2.new(0, 114, 0, 36)
+HowMuchBox.Text = ""
+HowMuchBox.Position = UDim2.new(0.11, 0, 0.41, 0)
+HowMuchBox.Name = "HowMuch"
+HowMuchBox.BackgroundTransparency = 0.1
+HowMuchBox.BorderRadius = UDim.new(0, 10)
+
+local MainScript = Instance.new("LocalScript", MainFrame)
+
+local NotifyLabel = Instance.new("TextLabel", MainFrame)
+NotifyLabel.TextWrapped = true
+NotifyLabel.BorderSizePixel = 0
+NotifyLabel.TextScaled = true
+NotifyLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+NotifyLabel.Font = Enum.Font.SourceSansBold
+NotifyLabel.TextSize = 14
+NotifyLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotifyLabel.Size = UDim2.new(0, 127, 0, 50)
+NotifyLabel.Text = "Only Works For Player When Open The Chat"
+NotifyLabel.Name = "Notify"
+NotifyLabel.Position = UDim2.new(0.58, 0, 0.09, 0)
+NotifyLabel.BackgroundTransparency = 0.2
+NotifyLabel.BorderRadius = UDim.new(0, 10)
